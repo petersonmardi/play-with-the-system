@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../static/style/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/style.css') }}" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" type="text/css" media="all" />
   </head>
@@ -20,36 +20,36 @@
            <div class="links">
            <div class="link">
             <div class="title">
-              Find your device os name
+              Find your OS name
             </div>
-            <button class="btn btn-1"> <i id="icono2" class="iconos fas fa-laptop"></i> OS name</button>
+            <button class="btn btn-1"> <i id="icono2" class="iconos fas fa-laptop"></i> Name</button>
            <div class="display display-name">
-             <p>OS name: {{ name }}</p>
+             <p>{{ name }}</p>
            </div>
            </div>
-         
+
            <div class="link">
              <div class="title">
               Find your internet IP address
              </div>
             <button class="btn btn-2"> <i id="icono" class="fas fa-wifi"></i> IP address</button>
             <div class="display display-ip">
-             <p>IP Address: {{ ip }}</p>
+             <p>{{ ip }}</p>
            </div>
           </div>
           <div class="link">
              <div class="title">
-             Find your device name
+             Find your system name
              </div>
             <button class="btn btn-3"> <i id="icono" class="fas fa-desktop"></i> Device</button>
             <div class="display display-device">
-             <p>IP Address: {{ ip }}</p>
+             <p>{{ sys_ }}</p>
            </div>
           </div>
           </div>
       </section>
     </main>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
-    <script src="../static/script/script.js" type="text/javascript" charset="utf-8"></script>
+    <script src=" {{ url_for('static', filename='script/script.js') }}" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>
