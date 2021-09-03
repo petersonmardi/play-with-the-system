@@ -12,7 +12,7 @@ main {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,8 +23,8 @@ main {
   min-height: 80vh;
   width: 60%;
   background: linear-gradient(
-  to left top, 
-  rgba(200,235,255,0.8), 
+  to left top,
+  rgba(200,235,255,0.8),
   rgba(200,235,255,0.5)
   );
   border-radius: 6px;
@@ -41,18 +41,13 @@ main {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  background: linear-gradient(
-  to right bottom,
-  rbga(255,255,255,0.3),
-  rbga(255,255,255,0.7)
-  );
 }
 .links {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  
+
 }
 .link {
   display: flex;
@@ -65,14 +60,10 @@ main {
   border-radius: 1rem;
   width: 33.33%;
   height: auto;
-  
+
 }
 .dashboard span {
   color: red;
-}
-
-.glass {
-  border: solid #f0f0f0 .50px;
 }
 
 .link button {
@@ -85,8 +76,7 @@ main {
 }
 
 .dashboard h1 {
-  font-weight: 900;
-  font-stretch: 16px;
+  font-weight: 600;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -102,6 +92,103 @@ main {
   color: #f0f0f0;
 }
 #icono, #icono2 {
-  color: #f0f0f0; 
-  padding-right: 2px; 
+  color: #f0f0f0;
+  padding-right: 2px;
+}
+.title {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1090px) {
+  .glass {
+    width: 80%;
+    padding: 15px;
+    margin: 25px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .link {
+    width: 80%;
+  }
+  .dashboard {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .glass {
+    width: 80%;
+    padding: 25px;
+    margin: 25px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .link {
+    width: 80%;
+  }
+  .dashboard {
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .glass {
+    width: 100%;
+    padding: 35px;
+    margin: 35px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .link {
+    width: 90%;
+  }
+  .dashboard {
+    padding: 35px;
+    height: 90%;
+  }
+  .dashboard h1 {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .glass {
+    width: 100%;
+    padding: 35px;
+    margin: 35px;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .link {
+    width: 100%;
+    border: none;
+  }
+  .dashboard {
+    padding: 35px;
+    height: 90%;
+  }
+  .dashboard h1 {
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
 }
