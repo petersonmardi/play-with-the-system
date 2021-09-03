@@ -5,12 +5,12 @@ from flask import (
   )
 import os, socket
 
-  
+
 bp = Blueprint('index', __name__)
 @bp.route('/')
 def index():
-    systemname = os.uname()[0]
-    
+    osname = os.uname()[0]
+    systemname = os.uname()[1]
     hostname = socket.gethostname()
     ipaddr = socket.gethostbyname(hostname)
-    return render_template('index.html', name=systemname, ip=ipaddr)
+    return render_template('index.html', name=osname, ip=ipaddr, sys_=systemname)
